@@ -50,7 +50,7 @@
         },
         {
             "num": 13,
-            "text": "Si vous cherchez quelque chose de savoureux, je vous recommande notre burger signature, je l'adore! Si vous préférez quelque chose de plus léger, notre salade Caesar est un excellent choix. Si vous voulez un peu de sucré, notre sundae aux fraises est très populaire."
+            "text": "Si vous cherchez quelque chose de savoureux, je vous recommande notre burger signature, je l'adore! \nSi vous préférez quelque chose de plus léger, notre salade Caesar est un excellent choix. \nSi vous voulez un peu de sucré, notre sundae aux fraises est très populaire."
         },
         {
             "num": 14,
@@ -306,7 +306,6 @@
         {
             "q": 19,
             "a": [
-                9,
                 11
             ]
         }

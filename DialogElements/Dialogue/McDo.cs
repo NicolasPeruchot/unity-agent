@@ -3,9 +3,15 @@ using System;
 class McDo : Chatbot
 {
 
+    private bool badBehavior = true;
+    private bool salade = false;
+    private bool bigmac = false;
+    private bool sundae = false;
+    private bool ask = false;
+    private bool payment = false;
+    private bool menu = false;
 
-    private bool tacos = false; // Le client veut un tacos
-    private bool bigmac = false; // Le client veut un bigmac
+    private bool dontKnow = false;
     private bool ciao = false; // Le client part
     private int achat = 0; // Le nombre d'achats
     private int n_tacos = 0; // Le nombre de fois où le client à demander un tacos depuis qu'il a fait une commande viable
@@ -22,38 +28,62 @@ class McDo : Chatbot
     public override int getCurrentQuestion()
     {
 
+        if (ask)
+        {
+            return badBehavior ? 2 : 13;
+        }
+
+        if (dontKnow)
+        {
+
+            return badBehavior ? 3 : 12;
+        }
+
         if (bigmac)
         {
-            return 5;
+            return badBehavior ? 4 : 14;
+        }
+
+        if (menu)
+        {
+            return badBehavior ? 5 : 15;
+        }
+
+        if (salade)
+        {
+            return badBehavior ? 6 : 16;
+        }
+
+        if (sundae)
+        {
+            return badBehavior ? 7 : 17;
         }
 
         if (ciao)
         {
-            return 3;
-        }
-        if (achat == 0)
-        {
-            if (tacos)
+            if (badBehavior)
             {
-                return 7;
+                if (achat != 0)
+                {
+                    return 10;
+                }
+                else
+                {
+                    return 9;
+                }
             }
             else
-            {
-                return 1;
-            }
+            { return 19; }
+        }
 
-        }
-        else
+        if (payment)
         {
-            if (tacos)
-            {
-                return 4;
-            }
-            else
-            {
-                return 2;
-            }
+            return badBehavior ? 8 : 18;
         }
+
+
+        return badBehavior ? 1 : 11;
+
     }
 
     public double getGoal(int lastQuestion, int lastAnswer)
@@ -61,7 +91,7 @@ class McDo : Chatbot
 
         // Si le client a fait un achat, on se rapproche du but en lui vendant encore d'autres plats
         // on s'éloigne du but s'il nous demande des tacos
-        if (lastAnswer == 2)
+        if (lastAnswer == 4 | lastAnswer == 5 | lastAnswer == 6)
         {
             n_tacos = 0;
             achat += 1;
@@ -140,32 +170,17 @@ class McDo : Chatbot
             stopDialogue();
         }
 
-        else if (r == 3 | r == 4)
-        {
-            ciao = true;
-        }
-        if (r == 5 | r == 6)
-        {
 
-        }
-        if (r == 2)
-        {
-            bigmac = true;
-        }
-        else
-        {
-            bigmac = false;
-        }
-        if (r == 1)
-        {
-            tacos = true;
-            n_tacos += 1;
-        }
-        else
-        {
-            tacos = false;
-        }
+        ask = r == 2;
+        bigmac = r == 4;
+        dontKnow = r == 1;
+        payment = r == 3 & achat != 0;
 
+        menu = r == 7 | r == 8;
+        salade = r == 5;
+        sundae = r == 6;
+
+        ciao = (r == 3 & achat == 0) | (r == 9) | (r == 10);
     }
 
 }

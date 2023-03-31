@@ -1,0 +1,105 @@
+{
+    "questions": [
+        {
+            "num": 1,
+            "text": "Bienvenue chez McDonalds, que puis-je faire pour vous?"
+        },
+        {
+            "num": 2,
+            "text": "Avec ceci?"
+        },
+        {
+            "num": 3,
+            "text": "Au revoir et à bientôt!"
+        },
+        {
+            "num": 4,
+            "text": "Nous ne servons pas de tacos. Souhaitez vous autre chose?"
+        },
+        {
+            "num": 5,
+            "text": "Frites ou potatoes?"
+        },
+        {
+            "num": 7,
+            "text": "Nous ne servons pas de tacos. Souhaitez vous autre chose?"
+        }
+    ],
+    "answers": [
+        {
+            "num": 1,
+            "text": "Je vais prendre un tacos 3 viandes."
+        },
+        {
+            "num": 2,
+            "text": "Je vais prendre un menu Big Mac."
+        },
+        {
+            "num": 3,
+            "text": "Je ne veux rien."
+        },
+        {
+            "num": 4,
+            "text": "C'est tout pour moi."
+        },
+        {
+            "num": 5,
+            "text": "Frites."
+        },
+        {
+            "num": 6,
+            "text": "Potatoes."
+        },
+        {
+            "num": 7,
+            "text": "Au revoir!"
+        }
+    ],
+    "autoanswers": [
+        {
+            "q": 1,
+            "a": [
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "q": 2,
+            "a": [
+                1,
+                2,
+                4
+            ]
+        },
+        {
+            "q": 5,
+            "a": [
+                5,
+                6
+            ]
+        },
+        {
+            "q": 7,
+            "a": [
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "q": 4,
+            "a": [
+                1,
+                2,
+                4
+            ]
+        },
+        {
+            "q": 3,
+            "a": [
+                7
+            ]
+        }
+    ]
+}

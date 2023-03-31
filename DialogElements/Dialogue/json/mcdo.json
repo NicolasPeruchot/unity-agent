@@ -2,56 +2,124 @@
     "questions": [
         {
             "num": 1,
-            "text": "Bienvenue chez McDonalds, que puis-je faire pour vous?"
+            "text": "Bon, tu veux quoi?"
         },
         {
             "num": 2,
-            "text": "Avec ceci?"
+            "text": "On a des burgers. Si tu veux faire semblant de manger sain, on a une salade. Si tu veux te gaver de sucre, t'as le sundae."
         },
         {
             "num": 3,
-            "text": "Au revoir et à bientôt!"
+            "text": "On va pas rester planté là toute la journée..."
         },
         {
             "num": 4,
-            "text": "Nous ne servons pas de tacos. Souhaitez vous autre chose?"
+            "text": "Un burger, super original! En menu ou ça suffit ?"
         },
         {
             "num": 5,
-            "text": "Frites ou potatoes?"
+            "text": "C'est original aussi ça, quoi d'autre?"
+        },
+        {
+            "num": 6,
+            "text": "Miam une bonne salade chimique. Et avec ça?"
         },
         {
             "num": 7,
-            "text": "Nous ne servons pas de tacos. Souhaitez vous autre chose?"
+            "text": "Tu veux encore des trucs?"
+        },
+        {
+            "num": 8,
+            "text": "Tu vas payer comment? Pas en espèce j'espère."
+        },
+        {
+            "num": 9,
+            "text": "Super, merci de me faire perdre mon temps."
+        },
+        {
+            "num": 10,
+            "text": "Bon courage pour pas tomber malade, ciao!"
+        },
+        {
+            "num": 11,
+            "text": "Bonjour et bienvenue chez McDonald! Comment puis-je vous aider aujourd'hui?"
+        },
+        {
+            "num": 12,
+            "text": "Prenez votre temps pour choisir! Je peux également vous conseiller si vous le souhaitez."
+        },
+        {
+            "num": 13,
+            "text": "Si vous cherchez quelque chose de savoureux, je vous recommande notre burger signature, je l'adore! Si vous préférez quelque chose de plus léger, notre salade Caesar est un excellent choix. Si vous voulez un peu de sucré, notre sundae aux fraises est très populaire."
+        },
+        {
+            "num": 14,
+            "text": "Excellent choix ! Voulez-vous ajouter des frites et une boisson pour compléter votre repas?"
+        },
+        {
+            "num": 15,
+            "text": "Très bien, c'est enregistré! Voulez-vous autre chose?"
+        },
+        {
+            "num": 16,
+            "text": "Très bon choix, c'est une option plus légère mais aussi délicieuse. Voulez-vous autre chose?"
+        },
+        {
+            "num": 17,
+            "text": "C'est un choix sucré et rafraîchissant ! Voulez-vous ajouter un article à votre commade?"
+        },
+        {
+            "num": 18,
+            "text": "Comment souhaitez-vous régler ?"
+        },
+        {
+            "num": 19,
+            "text": "Merci pour votre visite, à bientôt!"
         }
     ],
     "answers": [
         {
             "num": 1,
-            "text": "Je vais prendre un tacos 3 viandes."
+            "text": "Je ne sais."
         },
         {
             "num": 2,
-            "text": "Je vais prendre un menu Big Mac."
+            "text": "Pouvez-vous me conseiller?"
         },
         {
             "num": 3,
-            "text": "Je ne veux rien."
+            "text": "Je ne veux rien, merci."
         },
         {
             "num": 4,
-            "text": "C'est tout pour moi."
+            "text": "Je veux un Big Mac."
         },
         {
             "num": 5,
-            "text": "Frites."
+            "text": "Je veux une salade."
         },
         {
             "num": 6,
-            "text": "Potatoes."
+            "text": "Je veux un sundae."
         },
         {
             "num": 7,
+            "text": "Oui, avec des frites et un coca."
+        },
+        {
+            "num": 8,
+            "text": "Juste le Big Mac"
+        },
+        {
+            "num": 9,
+            "text": "Par carte"
+        },
+        {
+            "num": 10,
+            "text": "En espèce"
+        },
+        {
+            "num": 11,
             "text": "Au revoir!"
         }
     ],
@@ -61,7 +129,10 @@
             "a": [
                 1,
                 2,
-                3
+                3,
+                4,
+                5,
+                6
             ]
         },
         {
@@ -69,12 +140,55 @@
             "a": [
                 1,
                 2,
-                4
+                3,
+                4,
+                5,
+                6
+            ]
+        },
+        {
+            "q": 3,
+            "a": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        },
+        {
+            "q": 4,
+            "a": [
+                7,
+                8
+            ]
+        },
+        {
+            "q": 4,
+            "a": [
+                7,
+                8
             ]
         },
         {
             "q": 5,
             "a": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        },
+        {
+            "q": 6,
+            "a": [
+                1,
+                2,
+                3,
+                4,
                 5,
                 6
             ]
@@ -84,21 +198,116 @@
             "a": [
                 1,
                 2,
-                3
+                3,
+                4,
+                5,
+                6
             ]
         },
         {
-            "q": 4,
+            "q": 8,
+            "a": [
+                9,
+                10
+            ]
+        },
+        {
+            "q": 9,
+            "a": [
+                11
+            ]
+        },
+        {
+            "q": 10,
+            "a": [
+                11
+            ]
+        },
+        {
+            "q": 11,
             "a": [
                 1,
                 2,
-                4
+                3,
+                4,
+                5,
+                6
             ]
         },
         {
-            "q": 3,
+            "q": 12,
             "a": [
-                7
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        },
+        {
+            "q": 13,
+            "a": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        },
+        {
+            "q": 14,
+            "a": [
+                7,
+                8
+            ]
+        },
+        {
+            "q": 15,
+            "a": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        },
+        {
+            "q": 16,
+            "a": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        },
+        {
+            "q": 17,
+            "a": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+            ]
+        },
+        {
+            "q": 18,
+            "a": [
+                9,
+                10
+            ]
+        },
+        {
+            "q": 19,
+            "a": [
+                9,
+                11
             ]
         }
     ]
